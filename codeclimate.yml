@@ -1,17 +1,15 @@
 engines:
   rubocop:
-    enabled: true
+    enabled: false
   golint:
-   	enabled: true
+   	enabled: false
   eslint:
     enabled: false
   csslint:
-    enabled: true
+    enabled: false
   duplication:
-  	enabled: true
-    config:
-    	languages:
-      - javascript
+  	enabled: false
+
 ratings:
   paths:
   - src/**
