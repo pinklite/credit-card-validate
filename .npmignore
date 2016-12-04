@@ -1,7 +1,6 @@
 node_modules
 test
 tests
-.babelrc
 .eslintignore
 .eslintrc.json
 .flowconfig
@@ -9,3 +8,4 @@ bower.json
 .npmignore
 karma.conf.js
 rollup.js
+.travis.yml

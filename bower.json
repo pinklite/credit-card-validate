@@ -5,6 +5,7 @@
   "authors": [
     "Michal Ozogan <michal@ozogan.eu>"
   ],
+  "repository": "https://github.com/fabulator/credit-card-validation.git",
   "license": "Apache-2.0",
   "keywords": [
     "credit card",
@@ -20,6 +21,7 @@
     "src",
     "karma.conf.js",
     "package.json",
-    "rollup.js"
+    "rollup.js",
+    ".travis.yml"
   ]
 }
