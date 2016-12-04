@@ -1,11 +1,11 @@
 {
-  "name": "credit-card-validation",
+  "name": "credit-card-validate",
   "description": "Tool for validate credit cards.",
-  "main": "dist/credit-card-validation.js",
+  "main": "dist/credit-card-validate.js",
   "authors": [
     "Michal Ozogan <michal@ozogan.eu>"
   ],
-  "repository": "https://github.com/fabulator/credit-card-validation.git",
+  "repository": "https://github.com/fabulator/credit-card-validate.git",
   "license": "Apache-2.0",
   "keywords": [
     "credit card",

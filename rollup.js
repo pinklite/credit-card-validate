@@ -25,14 +25,14 @@ rollup.rollup({
 }).then((bundle) => {
     bundle.write({
         format: 'umd',
-        dest: './dist/credit-card-validation.js',
-        moduleName: 'CardValidation',
+        dest: './dist/credit-card-validate.js',
+        moduleName: 'CardValidate',
     });
 
     bundle.write({
         format: 'es',
-        dest: './dist/credit-card-validation.es.js',
-        moduleName: 'CardValidation',
+        dest: './dist/credit-card-validate.es.js',
+        moduleName: 'CardValidate',
     });
 });
 
@@ -45,7 +45,7 @@ rollup.rollup({
 }).then((bundle) => {
     bundle.write({
         format: 'umd',
-        dest: './dist/credit-card-validation.min.js',
-        moduleName: 'CardValidation',
+        dest: './dist/credit-card-validate.min.js',
+        moduleName: 'CardValidate',
     });
 });

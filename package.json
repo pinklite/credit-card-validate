@@ -1,5 +1,5 @@
 {
-  "name": "credit-card-validation",
+  "name": "credit-card-validate",
   "version": "0.9.0",
   "description": "Tool for validate credit cards.",
   "keywords": [
@@ -8,7 +8,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/fabulator/credit-card-validation.git"
+    "url": "https://github.com/fabulator/credit-card-validate.git"
   },
   "license": "Apache-2.0",
   "author": {
@@ -16,9 +16,9 @@
     "email": "michal@ozogan.eu",
     "url": "https://github.com/fabulator"
   },
-  "homepage": "https://github.com/fabulator/credit-card-validation",
-  "main": "dist/credit-card-validation.js",
-  "jsnext:main": "dist/credit-card-validation.es.js",
+  "homepage": "https://github.com/fabulator/credit-card-validate",
+  "main": "dist/credit-card-validate.js",
+  "jsnext:main": "dist/credit-card-validate.es.js",
   "devDependencies": {
     "babel-eslint": "^7.1.1",
     "babel-plugin-external-helpers": "^6.18.0",
