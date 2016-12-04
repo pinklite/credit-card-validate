@@ -1,8 +1,3 @@
 language: node_js
 node_js:
   - 6
-addons:
-  code_climate:
-    repo_token: 249407f10e996b97f78ecde39c12287b3621bfc8943b4824cb8061111f7a66ac
-after_success:
-  - codeclimate-test-reporter < ./tests/coverage/lcov/lcov.info
