@@ -1,0 +1,25 @@
+{
+  "name": "credit-card-validation",
+  "description": "Tool for validate credit cards.",
+  "main": "dist/credit-card-validation.js",
+  "authors": [
+    "Michal Ozogan <michal@ozogan.eu>"
+  ],
+  "license": "Apache-2.0",
+  "keywords": [
+    "credit card",
+    "credit cards"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src",
+    "karma.conf.js",
+    "package.json",
+    "rollup.js"
+  ]
+}

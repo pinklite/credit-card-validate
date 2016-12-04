@@ -1,0 +1,17 @@
+[ignore]
+.*node_modules/**.*
+.*test/**.*
+.*dist/**.*
+.*/*.json
+.*karma.conf.js
+.*rollup.js
+
+
+[include]
+
+[libs]
+
+[options]
+
+[version]
+0.36.0
