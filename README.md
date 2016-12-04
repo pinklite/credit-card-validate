@@ -1,6 +1,8 @@
 Credit card validation
 ============
 
+[![codecov](https://codecov.io/gh/fabulator/credit-card-validation/branch/master/graph/badge.svg)](https://codecov.io/gh/fabulator/credit-card-validation) [![codecov](https://travis-ci.org/fabulator/credit-card-validation.svg?branch=master)](https://travis-ci.org/fabulator/credit-card-validation)
+
 This library is for testing validity of credit cards. It can can check number of digits, luhn algorithm, number of digits in code (CVV, CVC, ...), expiration or type of Credit card.
 
 There are 7 card types built in - American Express, Dinners Club, Discover, JCB, Maestro, Master card and Visa. I can't guarantee that card type validation will work on 100%. There is not some trustworthy source with information how to detect it right. Most of information comes from https://en.wikipedia.org/wiki/Payment_card_number. You can also add your own credit card types.
