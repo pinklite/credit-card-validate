@@ -9,3 +9,5 @@ bower.json
 karma.conf.js
 rollup.js
 .travis.yml
+.idea
+.gitattributes

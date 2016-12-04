@@ -1,7 +1,6 @@
 Credit card validate
 ============
-
-[![codecov](https://codecov.io/gh/fabulator/credit-card-validate/branch/master/graph/badge.svg)](https://codecov.io/gh/fabulator/credit-card-validate) [![codecov](https://travis-ci.org/fabulator/credit-card-validate.svg?branch=master)](https://travis-ci.org/fabulator/credit-card-validate)
+[![codecov](https://img.shields.io/npm/v/credit-card-validate.svg)](https://www.npmjs.com/package/credit-card-validate) [![codecov](https://codecov.io/gh/fabulator/credit-card-validate/branch/master/graph/badge.svg)](https://codecov.io/gh/fabulator/credit-card-validate) [![codecov](https://travis-ci.org/fabulator/credit-card-validate.svg?branch=master)](https://travis-ci.org/fabulator/credit-card-validate)
 
 This library is for testing validity of credit cards. It can can check number of digits, luhn algorithm, number of digits in code (CVV, CVC, ...), expiration or type of Credit card.
 
