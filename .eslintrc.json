@@ -4,10 +4,7 @@
         "airbnb"
     ],
     "rules": {
-        "indent": [
-            "error",
-            4
-        ],
+        "indent": [2, 4],
         "arrow-body-style": 0,
         "jsdoc/check-param-names": 1,
         "jsdoc/check-tag-names": 1,
