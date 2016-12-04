@@ -11,6 +11,7 @@ module.exports = (config) => {
                 { type: 'cobertura', dir: './tests/coverage/cobertura', subdir: '.' },
                 { type: 'html', dir: './tests/coverage/html', subdir: '.' },
                 { type: 'lcov', dir: './tests/coverage/lcov', subdir: '.' },
+                { type: 'json', dir: './tests/coverage/json', subdir: '.' },
                 { type: 'text' },
             ],
         },
