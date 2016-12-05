@@ -8,25 +8,25 @@ There are 7 card types built in - American Express, Dinners Club, Discover, JCB,
 
 You can use package as npm module. Just install it:
 
-```
+```sh
 npm install credit-card-validate --save-dev
 ```
 
 and use it in you project:
 
-```
+```js
 var validators = require('credit-card-validate');
 var card = new validators.cards.Visa('4111111111111111', new Date('2017-29'), '122');
 console.log(card.isValid() ? 'Card is valid' : 'Card is invalid');
 ```
 
 You can also install it as bower package:
-```
+```sh
 npm install credit-card-validate
 ```
 
 and use is very similar as in npm
-```
+```js
 var card = new CardValidate.cards.MasterCard('5451418521738499', new Date('2018-29'), '432');
 console.log(card.isValid() ? 'Card is valid' : 'Card is invalid');
 ```
@@ -46,7 +46,7 @@ Following card types are currently build in:
 
 You can get various information from classes from static methods:
 
-```
+```js
 // will provide list of length card could be
 // eg [13, 16, 19]
 CardValidate.cards.Visa.getAllowedDigits()
@@ -61,7 +61,7 @@ CardValidate.cards.Visa.getCodeLocation()
 ```
 
 You can also create object and check validity of various property or all of them by once. To create a card object just push to constructor card number, expire date and code.
-```
+```js
 var card = CardValidate.cards.AmericanExpress("378282246310005", new Date("2019-12"), "3456");
 
 card.isExpired();
@@ -81,8 +81,7 @@ card.isValid();
 ## Custom card type
 You can create your own custom credit card. In example I'm using ECMAScript 2015 syntax.
 
-```
-
+```js
 class YouOwnCard extends CardValidate.CreditCard {
 
     constructor(number, expire, code) {
@@ -118,7 +117,7 @@ class YouOwnCard extends CardValidate.CreditCard {
 
 With last feature you can detect credit card type based on number. You can to create object of CreditCardFactory a fill it with all credit card you want to support:
 
-```
+```js
 var creditCardFactory = CardValidate.CreditCardFactory([CardValidator.cards.DinnersClub, CardValidator.cards.JCB]);
 
 // this will return array with both DinnersClub and JCB, because number number can be both
