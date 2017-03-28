@@ -2,9 +2,9 @@ Credit card validate
 ============
 ![codecov](https://img.shields.io/bower/v/credit-card-validate.svg) [![codecov](https://img.shields.io/npm/v/credit-card-validate.svg)](https://www.npmjs.com/package/credit-card-validate) [![codecov](https://codecov.io/gh/fabulator/credit-card-validate/branch/master/graph/badge.svg)](https://codecov.io/gh/fabulator/credit-card-validate) [![codecov](https://travis-ci.org/fabulator/credit-card-validate.svg?branch=master)](https://travis-ci.org/fabulator/credit-card-validate)
 
-This library is for testing validity of credit cards. It can can check number of digits, luhn algorithm, number of digits in code (CVV, CVC, ...), expiration or type of Credit card.
+This library is for testing the validity of credit cards. It can can check number of digits, luhn algorithm, number of digits in code (CVV, CVC, ...), expiration or type of Credit card.
 
-There are 7 card types built in - American Express, Dinners Club, Discover, JCB, Maestro, Master card and Visa. I can't guarantee that card type validation will work on 100%. There is not some trustworthy source with information how to detect it right. Most of information comes from https://en.wikipedia.org/wiki/Payment_card_number. You can also add your own credit card types.
+There are 7 card types built in - American Express, Diners Club, Discover, JCB, Maestro, MasterCard and Visa. I can't guarantee that card type validation will work on 100%. There is not some trustworthy source with information how to detect it right. Most of information comes from https://en.wikipedia.org/wiki/Payment_card_number. You can also add your own credit card types.
 
 You can use package as npm module. Just install it:
 
@@ -22,7 +22,7 @@ console.log(card.isValid() ? 'Card is valid' : 'Card is invalid');
 
 You can also install it as bower package:
 ```sh
-npm install credit-card-validate
+bower install credit-card-validate
 ```
 
 and use is very similar as in npm
@@ -37,11 +37,11 @@ It can be also used with RequireJS, CommonJS, Browserify or Webpack.
 
 Following card types are currently build in:
 - American Express
-- Dinners Club
+- Diners Club
 - Discover
 - JCB
 - Maestro
-- Master card
+- MasterCard
 - Visa
 
 You can get various information from classes from static methods:
@@ -118,12 +118,12 @@ class YouOwnCard extends CardValidate.CreditCard {
 With last feature you can detect credit card type based on number. You can to create object of CreditCardFactory a fill it with all credit card you want to support:
 
 ```js
-var creditCardFactory = CardValidate.CreditCardFactory([CardValidator.cards.DinnersClub, CardValidator.cards.JCB]);
+var creditCardFactory = CardValidate.CreditCardFactory([CardValidate.cards.DinersClub, CardValidate.cards.JCB]);
 
-// this will return array with both DinnersClub and JCB, because number number can be both
+// this will return array with both DinersClub and JCB, because number number can be both
 console.log(creditCardFactory.find('3');
 
 // this return array with one item JCB card
-console.log(creditCardFactory.find('35', new Date('2010-10', '123');
+console.log(creditCardFactory.find('35', new Date('2010-10'), '123');
 
 ```

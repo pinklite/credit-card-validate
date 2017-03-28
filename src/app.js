@@ -4,7 +4,8 @@ import CreditCard from './CreditCard/CreditCard';
 import MasterCard from './CreditCard/Types/MasterCard';
 import Visa from './CreditCard/Types/Visa';
 import AmericanExpress from './CreditCard/Types/AmericanExpress';
-import DinnersClub from './CreditCard/Types/DinnersClub';
+import DinersClub from './CreditCard/Types/DinersClub';
+import Discover from './CreditCard/Types/Discover';
 import JCB from './CreditCard/Types/JCB';
 import MaestroCard from './CreditCard/Types/MaestroCard';
 
@@ -12,7 +13,8 @@ const cards = {
     MasterCard,
     Visa,
     AmericanExpress,
-    DinnersClub,
+    DinersClub,
+    Discover,
     JCB,
     MaestroCard,
 };

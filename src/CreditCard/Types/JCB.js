@@ -10,7 +10,7 @@ class JCB extends CreditCard {
     /** @inheritdoc */
     constructor(number: string, expire: ?Date, code: ?string) {
         super(number, expire, code);
-        this.name = 'JBC';
+        this.name = 'JCB';
         this.allowedDigits = JCB.getAllowedDigits();
         this.allowedCodeDigits = JCB.getAllowedCodeDigits();
         this.codeLocation = JCB.getCodeLocation();
