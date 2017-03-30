@@ -1,6 +1,6 @@
 {
   "name": "credit-card-validate",
-  "description": "Tool for validate credit cards.",
+  "description": "Tool for validating credit cards.",
   "main": "dist/credit-card-validate.js",
   "authors": [
     "Michal Ozogan <michal@ozogan.eu>"

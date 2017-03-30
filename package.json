@@ -1,7 +1,7 @@
 {
   "name": "credit-card-validate",
-  "version": "0.9.2",
-  "description": "Tool for validate credit cards.",
+  "version": "0.9.3",
+  "description": "Tool for validating credit cards.",
   "keywords": [
     "credit card",
     "credit cards"

@@ -1,4 +1,4 @@
-import DinnersClub from '../../../src/CreditCard/Types/DinnersClub';
+import DinersClub from '../../../src/CreditCard/Types/DinersClub';
 import cardsNumberSets from './Data/cardsNumberSets';
 
 describe('Discover', () => {
@@ -6,11 +6,11 @@ describe('Discover', () => {
     let card;
 
     beforeEach(() => {
-        card = new DinnersClub(0);
+        card = new DinersClub(0);
     });
 
     it('should return code location', () => {
-        expect(card.getCodeLocation()).toEqual(DinnersClub.getCodeLocation());
+        expect(card.getCodeLocation()).toEqual(DinersClub.getCodeLocation());
     });
 
     it('should get name', () => {

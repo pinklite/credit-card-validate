@@ -1,7 +1,7 @@
 import JCB from '../../../src/CreditCard/Types/JCB';
 import cardsNumberSets from './Data/cardsNumberSets';
 
-describe('JBC', () => {
+describe('JCB', () => {
 
     let card;
 

@@ -221,24 +221,24 @@ var CreditCardFactory = function () {
  * Exception for missing data.
  */
 var MissingDataError = function (_Error) {
-  inherits(MissingDataError, _Error);
+    inherits(MissingDataError, _Error);
 
-  /**
-   * Constructor
-   *
-   * @param {string} message - Error message
-   */
-  function MissingDataError(message) {
-    classCallCheck(this, MissingDataError);
+    /**
+     * Constructor
+     *
+     * @param {string} message - Error message
+     */
+    function MissingDataError(message) {
+        classCallCheck(this, MissingDataError);
 
-    var _this = possibleConstructorReturn(this, (MissingDataError.__proto__ || Object.getPrototypeOf(MissingDataError)).call(this, message));
+        var _this = possibleConstructorReturn(this, (MissingDataError.__proto__ || Object.getPrototypeOf(MissingDataError)).call(this, message));
 
-    _this.message = message;
-    _this.name = 'MissingDataError';
-    return _this;
-  }
+        _this.message = message;
+        _this.name = 'MissingDataError';
+        return _this;
+    }
 
-  return MissingDataError;
+    return MissingDataError;
 }(Error);
 
 /**
@@ -688,22 +688,22 @@ var AmericanExpress = function (_CreditCard) {
 }(CreditCard);
 
 /**
- * DinnersClub
+ * DinersClub
  */
-var DinnersClub = function (_CreditCard) {
-    inherits(DinnersClub, _CreditCard);
+var DinersClub = function (_CreditCard) {
+    inherits(DinersClub, _CreditCard);
 
     /** @inheritdoc */
-    function DinnersClub(number, expire, code) {
-        classCallCheck(this, DinnersClub);
+    function DinersClub(number, expire, code) {
+        classCallCheck(this, DinersClub);
 
-        var _this = possibleConstructorReturn(this, (DinnersClub.__proto__ || Object.getPrototypeOf(DinnersClub)).call(this, number, expire, code));
+        var _this = possibleConstructorReturn(this, (DinersClub.__proto__ || Object.getPrototypeOf(DinersClub)).call(this, number, expire, code));
 
-        _this.name = 'Dinners Club';
-        _this.allowedDigits = DinnersClub.getAllowedDigits();
-        _this.allowedCodeDigits = DinnersClub.getAllowedCodeDigits();
-        _this.codeLocation = DinnersClub.getCodeLocation();
-        _this.startDigits = DinnersClub.getStartDigits();
+        _this.name = 'Diners Club';
+        _this.allowedDigits = DinersClub.getAllowedDigits();
+        _this.allowedCodeDigits = DinersClub.getAllowedCodeDigits();
+        _this.codeLocation = DinersClub.getCodeLocation();
+        _this.startDigits = DinersClub.getStartDigits();
         return _this;
     }
 
@@ -714,7 +714,7 @@ var DinnersClub = function (_CreditCard) {
      */
 
 
-    createClass(DinnersClub, null, [{
+    createClass(DinersClub, null, [{
         key: 'getStartDigits',
         value: function getStartDigits() {
             return ['300', '301', '302', '303', '304', '305', '309', '36', '38', '39'];
@@ -756,7 +756,79 @@ var DinnersClub = function (_CreditCard) {
             return [14];
         }
     }]);
-    return DinnersClub;
+    return DinersClub;
+}(CreditCard);
+
+/**
+ * Discover
+ */
+var Discover = function (_CreditCard) {
+    inherits(Discover, _CreditCard);
+
+    /** @inheritdoc */
+    function Discover(number, expire, code) {
+        classCallCheck(this, Discover);
+
+        var _this = possibleConstructorReturn(this, (Discover.__proto__ || Object.getPrototypeOf(Discover)).call(this, number, expire, code));
+
+        _this.name = 'Discover';
+        _this.allowedDigits = Discover.getAllowedDigits();
+        _this.allowedCodeDigits = Discover.getAllowedCodeDigits();
+        _this.codeLocation = Discover.getCodeLocation();
+        _this.startDigits = Discover.getStartDigits();
+        return _this;
+    }
+
+    /**
+     * Get list of digits which can be on begining of card.
+     *
+     * @returns {[string]} list of digits
+     */
+
+
+    createClass(Discover, null, [{
+        key: 'getStartDigits',
+        value: function getStartDigits() {
+            return ['65', '6011', '644649', '622126622925'];
+        }
+
+        /**
+         * Where is code located?
+         *
+         * @returns {Location} code location
+         */
+
+    }, {
+        key: 'getCodeLocation',
+        value: function getCodeLocation() {
+            return 'back';
+        }
+
+        /**
+         * How many digits have code?
+         *
+         * @returns {number} number of digits
+         */
+
+    }, {
+        key: 'getAllowedCodeDigits',
+        value: function getAllowedCodeDigits() {
+            return 3;
+        }
+
+        /**
+         * Get kist of number of digits that can have credit card number.
+         *
+         * @returns {[number]} list of number of digits
+         */
+
+    }, {
+        key: 'getAllowedDigits',
+        value: function getAllowedDigits() {
+            return [16, 19];
+        }
+    }]);
+    return Discover;
 }(CreditCard);
 
 /**
@@ -771,7 +843,7 @@ var JCB = function (_CreditCard) {
 
         var _this = possibleConstructorReturn(this, (JCB.__proto__ || Object.getPrototypeOf(JCB)).call(this, number, expire, code));
 
-        _this.name = 'JBC';
+        _this.name = 'JCB';
         _this.allowedDigits = JCB.getAllowedDigits();
         _this.allowedCodeDigits = JCB.getAllowedCodeDigits();
         _this.codeLocation = JCB.getCodeLocation();
@@ -908,7 +980,8 @@ var cards = {
     MasterCard: MasterCard,
     Visa: Visa,
     AmericanExpress: AmericanExpress,
-    DinnersClub: DinnersClub,
+    DinersClub: DinersClub,
+    Discover: Discover,
     JCB: JCB,
     MaestroCard: MaestroCard
 };

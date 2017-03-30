@@ -3,18 +3,18 @@ import CreditCard from '../CreditCard';
 import type { Location } from '../CreditCardTypes';
 
 /**
- * DinnersClub
+ * DinersClub
  */
-class DinnersClub extends CreditCard {
+class DinersClub extends CreditCard {
 
     /** @inheritdoc */
     constructor(number: string, expire: ?Date, code: ?string) {
         super(number, expire, code);
-        this.name = 'Dinners Club';
-        this.allowedDigits = DinnersClub.getAllowedDigits();
-        this.allowedCodeDigits = DinnersClub.getAllowedCodeDigits();
-        this.codeLocation = DinnersClub.getCodeLocation();
-        this.startDigits = DinnersClub.getStartDigits();
+        this.name = 'Diners Club';
+        this.allowedDigits = DinersClub.getAllowedDigits();
+        this.allowedCodeDigits = DinersClub.getAllowedCodeDigits();
+        this.codeLocation = DinersClub.getCodeLocation();
+        this.startDigits = DinersClub.getStartDigits();
     }
 
     /**
@@ -54,4 +54,4 @@ class DinnersClub extends CreditCard {
     }
 }
 
-export default DinnersClub;
+export default DinersClub;
