@@ -118,7 +118,7 @@ class YouOwnCard extends CardValidate.CreditCard {
 With last feature you can detect credit card type based on number. You can to create object of CreditCardFactory a fill it with all credit card you want to support:
 
 ```js
-var creditCardFactory = CardValidate.CreditCardFactory([CardValidate.cards.DinersClub, CardValidate.cards.JCB]);
+var creditCardFactory = new CardValidate.CreditCardFactory([CardValidate.cards.DinersClub, CardValidate.cards.JCB]);
 
 // this will return array with both DinersClub and JCB, because number number can be both
 console.log(creditCardFactory.find('3');
