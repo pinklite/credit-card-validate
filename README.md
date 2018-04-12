@@ -1,6 +1,11 @@
 Credit card validate
 ============
-![codecov](https://img.shields.io/bower/v/credit-card-validate.svg) [![codecov](https://img.shields.io/npm/v/credit-card-validate.svg)](https://www.npmjs.com/package/credit-card-validate) [![codecov](https://codecov.io/gh/fabulator/credit-card-validate/branch/master/graph/badge.svg)](https://codecov.io/gh/fabulator/credit-card-validate) [![codecov](https://travis-ci.org/fabulator/credit-card-validate.svg?branch=master)](https://travis-ci.org/fabulator/credit-card-validate)
+
+[![npm version](https://badge.fury.io/js/credit-card-validate.svg)](https://badge.fury.io/js/credit-card-validate)
+[![renovate-app](https://img.shields.io/badge/renovate-app-blue.svg)](https://renovateapp.com/) 
+[![Known Vulnerabilities](https://snyk.io/test/github/fabulator/credit-card-validate/badge.svg)](https://snyk.io/test/github/fabulator/credit-card-validate)
+[![codecov](https://codecov.io/gh/fabulator/credit-card-validate/branch/master/graph/badge.svg)](https://codecov.io/gh/fabulator/credit-card-validate) 
+[![travis](https://travis-ci.org/fabulator/credit-card-validate.svg?branch=master)](https://travis-ci.org/fabulator/credit-card-validate)
 
 This library is for testing the validity of credit cards. It can can check number of digits, luhn algorithm, number of digits in code (CVV, CVC, ...), expiration or type of Credit card.
 
@@ -17,17 +22,6 @@ and use it in you project:
 ```js
 var validators = require('credit-card-validate');
 var card = new validators.cards.Visa('4111111111111111', new Date('2017-29'), '122');
-console.log(card.isValid() ? 'Card is valid' : 'Card is invalid');
-```
-
-You can also install it as bower package:
-```sh
-bower install credit-card-validate
-```
-
-and use is very similar as in npm
-```js
-var card = new CardValidate.cards.MasterCard('5451418521738499', new Date('2018-29'), '432');
 console.log(card.isValid() ? 'Card is valid' : 'Card is invalid');
 ```
 

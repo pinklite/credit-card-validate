@@ -1,4 +1,4 @@
 # Ignore built files except build/index.js
-build/*
+dist/*
 rollup.js
 karma.conf.js

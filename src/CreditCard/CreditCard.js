@@ -58,9 +58,9 @@ class CreditCard {
      * Set card number.
      *
      * @param {string} number - number to set
-     * @returns {CreditCard} self
+     * @returns {CreditCard} this
      */
-    setNumber(number: string): self {
+    setNumber(number: string): this {
         this.number = number;
         return this;
     }
@@ -78,9 +78,9 @@ class CreditCard {
      * Set expire date.
      *
      * @param {Date} expire - expire date to set
-     * @returns {CreditCard} self
+     * @returns {CreditCard} this
      */
-    setExpire(expire: Date): self {
+    setExpire(expire: Date): this {
         this.expire = CreditCard.getCleanedDate(expire);
         return this;
     }
@@ -98,11 +98,11 @@ class CreditCard {
      * Set card code.
      *
      * @param {string} code - code to set
-     * @returns {string} self
+     * @returns {string} this
      */
-    setCode(code: string): self {
+    setCode(code: string): this {
         this.code = code;
-        return this.code;
+        return this;
     }
 
     /**

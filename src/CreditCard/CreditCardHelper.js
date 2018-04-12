@@ -19,8 +19,10 @@ class CreditCardHelper {
         let mul = 0;
         let sum = 0;
 
+        // eslint-disable-next-line no-plusplus
         while (len--) {
             sum += prodArr[mul][parseInt(number.charAt(len), 10)];
+            // eslint-disable-next-line no-bitwise
             mul ^= 1;
         }
 
