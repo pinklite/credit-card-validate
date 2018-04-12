@@ -6,7 +6,6 @@ import type { Location } from '../CreditCardTypes';
  * JCB card
  */
 class JCB extends CreditCard {
-
     /** @inheritdoc */
     constructor(number: string, expire: ?Date, code: ?string) {
         super(number, expire, code);

@@ -4,7 +4,6 @@
  * Credit card helper brings static method to validate card properties.
  */
 class CreditCardHelper {
-
     /**
      * Validate number by lunh algoritm.
      * https://gist.github.com/2134376 - Phil Green (ShirtlessKirk)

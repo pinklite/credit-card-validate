@@ -38,7 +38,6 @@ class CreditCardFactory {
             return new array[key](number, expire, code);
         });
     }
-
 }
 
 export default CreditCardFactory;

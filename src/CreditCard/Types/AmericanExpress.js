@@ -6,7 +6,6 @@ import type { Location } from '../CreditCardTypes';
  * American Express
  */
 class AmericanExpress extends CreditCard {
-
     /** @inheritdoc */
     constructor(number: string, expire: ?Date, code: ?string) {
         super(number, expire, code);
